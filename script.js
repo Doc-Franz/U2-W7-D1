@@ -28,7 +28,6 @@ class Pet {
 
   isTheSameOwner = function (petListOwner) {
     const isDuplicated = petListOwner.filter((element, index) => petListOwner.indexOf(element) !== index);
-    console.log(isDuplicated);
     return isDuplicated.length > 0;
   };
 }
@@ -48,6 +47,25 @@ register.onsubmit = (event) => {
   const petIstance = new Pet(petName, ownerName, species, breed);
   petList.push(petIstance);
   petListOwner.push(petIstance.ownerName);
+
+  const petClasses = document.getElementById("pet-classes");
+
+  const ul = document.createElement("ul");
+  const petNameLi = document.createElement("li");
+  const ownerNameLi = document.createElement("li");
+  const speciesLi = document.createElement("li");
+  const breedLi = document.createElement("li");
+
+  petNameLi.textContent = petName;
+  ownerNameLi.textContent = ownerName;
+  speciesLi.textContent = species;
+  breedLi.textContent = breed;
+
+  petClasses.appendChild(ul);
+  ul.appendChild(petNameLi);
+  ul.appendChild(ownerNameLi);
+  ul.appendChild(speciesLi);
+  ul.appendChild(breedLi);
 
   document.getElementById("petName").value = "";
   document.getElementById("ownerName").value = "";

@@ -32,3 +32,13 @@ button {
 #check {
   background-color: rgb(174, 248, 248);
 }
+
+#pet-classes {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 1.5rem;
+}
+
+#pet-classes ul {
+  margin-right: 60px;
+}

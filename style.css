@@ -1,0 +1,34 @@
+.content {
+  background-color: antiquewhite;
+  padding: 100px;
+  margin: 60px;
+  border-radius: 15px;
+}
+
+.input-text {
+  display: flex;
+  flex-wrap: wrap;
+  margin-inline: 5%;
+  justify-content: space-around;
+}
+
+.properties {
+  border: 2px solid black;
+  border-radius: 5px;
+  width: 150px;
+  height: 20px;
+}
+
+button {
+  margin-top: 20px;
+  margin-left: 340px;
+  width: 150px;
+  height: 30px;
+  border-radius: 10px;
+  font-weight: 600;
+  background-color: rgb(157, 196, 157);
+}
+
+#check {
+  background-color: rgb(174, 248, 248);
+}
